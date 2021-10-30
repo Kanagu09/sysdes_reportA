@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message form | foamapp.go</title>
+</head>
+
+<body>
+    <form action="/form" method="GET">
+        <input type="hidden" name="name" value="{{.Name}}">
+        <p>名前: {{.Name}}</p>
+        <input type="submit" value="submit">
+    </form>
+</body>
+
+</html>

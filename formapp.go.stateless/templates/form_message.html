@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Message form | foamapp.go</title>
+</head>
+
+<body>
+    <form action="/register-message" method="POST">
+        <input type="hidden" name="name" value="{{.Name}}">
+        <input type="hidden" name="date" value="{{.Date}}">
+        <p><label for="message">メッセージ:</label></p>
+        <p><textarea name="message" cols="30" rows="5">{{.Message}}</textarea></p>
+        <input type="submit" value="next">
+    </form>
+    <br />
+    <form action="/back-message" method="POST">
+        <input type="hidden" name="name" value="{{.Name}}">
+        <input type="hidden" name="date" value="{{.Date}}">
+        <input type="hidden" name="message" value="{{.Message}}">
+        <input type="submit" value="back">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Start form | foamapp.go</title>
+</head>
+
+<body>
+    <h1>アンケート開始</h1>
+    <form action="/register-start" method="POST">
+        <input type="hidden" name="name" value="{{.Name}}">
+        <input type="hidden" name="date" value="{{.Date}}">
+        <input type="hidden" name="message" value="{{.Message}}">
+        <input type="submit" value="start">
+    </form>
+</body>
+
+</html>

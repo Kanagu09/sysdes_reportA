@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Name form | foamapp.go</title>
+</head>
+
+<body>
+    <form action="/register-name" method="POST">
+        <p><label for="name">名前: </label><input type="text" name="name" value='{{.Name}}'></p>
+        <input type="submit" value="next">
+    </form>
+    <br />
+    <form action="/back-name" method="POST">
+        <input type="submit" value="back">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Date form | foamapp.go</title>
+</head>
+
+<body>
+    <form action="/register-date" method="POST">
+        <p><label for="date">生年月日: </label><input type="date" name="date" value='{{.Date}}'></p>
+        <input type="submit" value="next">
+    </form>
+    <br />
+    <form action="/back-date" method="POST">
+        <input type="submit" value="back">
+    </form>
+</body>
+
+</html>
